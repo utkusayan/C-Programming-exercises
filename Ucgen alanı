@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int taban;
+    int yukseklik;
+    float alan;
+
+    printf("taban degerini giriniz :");
+    scanf("%d",&taban);
+    printf("yukseklik degerini giriniz :");
+    scanf("%d",&yukseklik);
+    alan=(taban*yukseklik)/2.00;
+    printf("alan = %.2f",alan);
+    return 0;
+}
