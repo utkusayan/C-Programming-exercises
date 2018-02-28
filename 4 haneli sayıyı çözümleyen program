@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayi;
+    printf("Cozumlenecek sayi(maksimum 4 haneli)= ");
+    scanf("%d",&sayi);
+    printf("-------------------------------------\n");
+    printf("verilen %d sayisinda:\n",sayi);
+    int binlik;
+    binlik=sayi/1000;
+    printf("%d tane binlik\n",binlik);
+    int yuzluk;
+    yuzluk=(sayi-binlik*1000)/100;
+    printf("%d tane yuzluk\n",yuzluk);
+    int onluk;
+    onluk=(sayi-(binlik*1000+((sayi-binlik*1000)/100)*100))/10;
+    printf("%d tane onluk\n",onluk);
+    int birlik;
+    birlik= sayi-(binlik*1000+yuzluk*100+onluk*10);
+    printf("%d tane birlik\n",birlik);
+    return 0;
+}
