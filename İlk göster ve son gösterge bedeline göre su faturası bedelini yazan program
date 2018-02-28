@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float ilk_gosterge;
+    float son_gosterge;
+    printf("Ilk gostergeyi giriniz: ");
+    scanf("%f",&ilk_gosterge);
+    printf("Son gostergeyi giriniz: ");
+    scanf("%f",&son_gosterge);
+    printf("------------------------\n");
+    printf("Tuketim miktari            :%.2f\n",son_gosterge-ilk_gosterge);
+    printf("Tuketim tutari             :%.2f\n",(son_gosterge-ilk_gosterge)*0.912857);
+    printf("Atiksu bedeli (yuzde 50)   :%.2f\n",((son_gosterge-ilk_gosterge)*0.912857)*0.5);
+    printf("TOPLAM                     :%.2f TL\n\n\n",((son_gosterge-ilk_gosterge)*0.912857)+((son_gosterge-ilk_gosterge)*0.912857)*0.5);
+
+    return 0;
+}
