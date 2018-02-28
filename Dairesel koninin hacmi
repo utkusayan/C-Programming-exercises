@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int R;
+    int h;
+    float pi=3.1419;
+    int r;
+    printf("yuksekligi giriniz:");
+    scanf("%d",&h);
+    printf("capi giriniz:");
+    scanf("%d",&R);
+    printf("Girdi degerleri:yukseklik %d ve cap %d",h,R);
+    r=R/2;
+    float alan;
+    alan=pi*r*r;
+    float hacim;
+    hacim=h*alan/3;
+    printf("Dairesel koninin hacmi: %.2f cm kuptur.",hacim);
+
+
+    return 0;
+}
