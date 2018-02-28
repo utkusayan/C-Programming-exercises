@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float toplam;
+    printf("Lutfen odenecek toplam tutuari giriniz: ");
+    scanf("%f",&toplam);
+    printf("--------------------------------------\n");
+    printf("Odenen toplam tutar =       %.2f\n",toplam);
+    float KDV;
+    KDV=toplam*15/100;
+    printf("Hesaplanan KDV      =       %.2f\n",KDV);
+    float gaz;
+    gaz=toplam-KDV;
+    printf("Gaz bedeli          =       %.2f\n",gaz);
+    float hakedilen_gaz;
+    hakedilen_gaz=gaz*304700/100000;
+    printf("Hak edilen gaz      =       %.2f\n",hakedilen_gaz);
+
+    return 0;
+}
