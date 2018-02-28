@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float lt;
+    float tl;
+    int km;
+
+    printf("Km basina yakit tuketimi (lt)    :");
+    scanf("%f",&lt);
+    printf("1 lt yakitin fiyati (TL)         :");
+    scanf("%f",&tl);
+    printf("Aracin katettigi toplam yol (km) :");
+    scanf("%d",&km);
+
+    float maliyet;
+    maliyet=km*tl*km;
+
+    printf("----------------------------------\n");
+    printf("Toplam yakit maliyeti            :%.2f ",maliyet);
+
+
+    return 0;
+}
