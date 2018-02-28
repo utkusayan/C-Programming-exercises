@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayi1;
+    int sayi2;
+    float harmonikort;
+
+    printf("lutfen ilk sayiyi giriniz:");
+    scanf("%d",&sayi1);
+    printf("lutfen ikinci sayiyi giriniz:");
+    scanf("%d",&sayi2);
+    harmonikort=(2.0*sayi1*sayi2)/(sayi1+sayi2);
+    printf("\n%Harmonik ortalama : %.2f",harmonikort);
+
+    return 0;
+}
