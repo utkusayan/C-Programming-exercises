@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int R;
+    float pi=3.1419;
+    printf("capi giriniz:");
+    scanf("%d",&R);
+    float r;
+    r=R/2;
+    printf("\nGirdi degerleri: yaricap=%.2f\n",r);
+    float hacim;
+    hacim=(4*pi/3)*r*r*r;
+    printf("\nkurenin hacmi:%.2f cm kuptur.\n",hacim);
+    return 0;
+}
