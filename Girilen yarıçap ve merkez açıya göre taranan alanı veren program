@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int r;
+    int X;
+    float pi=3.14;
+
+    printf("Yaricap degerini giriniz :");
+    scanf("%d",&r);
+    printf("Merkez aci degerini giriniz :");
+    scanf("%d",&X);
+    printf("-----------------------------\n");
+
+    float alan;
+    alan=pi*r*r*X/360;
+    printf("Acinin taradigi alan %.2f santimetrekaredir.",alan);
+
+    return 0;
+}
