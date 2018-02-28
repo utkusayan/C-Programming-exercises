@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int oC;
+    printf("sicakligi giriniz (oC) :");
+    scanf("%d",&oC);
+    printf("-----------------------\n");
+    float fahrenhayt;
+    fahrenhayt=((oC/100)*180)+32;
+    printf("Girilen %d oC,%.2f Fahrenhayt",oC,fahrenhayt);
+    return 0;
+}
